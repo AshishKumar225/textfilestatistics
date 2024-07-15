@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+security:
+  enable-csrf: true
+  user:
+    name: ashish_kumar
+    password: Password@123
+    role: USER
+  allowed-origin: http://localhost:3000
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+security:
+  enable-csrf: false
